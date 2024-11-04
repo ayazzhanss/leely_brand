@@ -45,17 +45,3 @@ CREATE TABLE payments (
 );
 
 
-INSERT INTO customers (first_name, last_name, email, phone, address)
-VALUES ('Азамат', 'Ермеков', 'azamat@mail.kz', '77001234567', 'Алматы қ.');
-
-INSERT INTO products (name, description, price, stock)
-VALUES ('Футболка', 'Мақтадан жасалған футболка', 4999.99, 100);
-
-INSERT INTO orders (customer_id, total)
-VALUES (1, 4999.99);
-
-INSERT INTO order_items (order_id, product_id, quantity, price)
-VALUES (1, 1, 1, 4999.99);
-
-INSERT INTO payments (order_id, amount, method)
-VALUES (1, 4999.99, 'Картамен төлем');
